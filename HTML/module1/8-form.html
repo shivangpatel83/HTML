@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form and input tag</title>
+    <style>
+        body{
+            border: 10px solid purple;
+            text-align: center;
+            background-color: bisque;
+        } 
+     div{
+        margin: 10px;
+     }
+     h2{
+        padding: 10px;
+        background-color: blueviolet;
+     }
+      #enter{
+        padding: 50px;
+        background-color: black;
+     } 
+     #enter input{
+        padding: 3px 50px;
+     }
+
+    </style>
+</head>
+<body>
+    <form action="forms.php">
+    <h2>This form is for basic information</h2>
+    <fieldset> 
+    <legend><h4>Personal Information</h4></legend>
+    <div id="first">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="nameid" placeholder="Name"></div>
+    <div><label for="dob">Date of birth:</label>
+    <input type="date" name="dob" id="dobid">
+</div>
+<div>
+    <label for="Email">Email:</label>
+    <input type="Email" name="Email" id="mailid" placeholder="Enter Email">
+</div>
+<div>
+    <label for="contact">Contact:</label>
+    <input type="tel" name="contact" id="contactid" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+</div>
+<div>
+    Gender:&nbsp;<label for="gender">Male</label>
+    <input type="radio" name="gender" id="genderid">&nbsp
+    <label for="gender">Female</label>
+    <input type="radio" name="gender" id="genderid">&nbsp
+    <label for="gender">Others</label>
+    <input type="radio" name="gender" id="genderid"> 
+
+</div>
+<div>
+    <label for="address">Address:</label>
+    <textarea type="textarea" name="address" id="addressid" rows="2"></textarea>
+</div>
+<div>
+    Nationality:&nbsp;<label for="nationality">Indian</label>
+    <input type="checkbox" name="nationality" id="nationalityid"> 
+</div>
+<div>
+    <label for="city">State:</label>
+    <select name="city" id="cityid">
+        <option selected value="slt">--select--</option>
+        <option value="Uttar padesh">Uttar padesh</option>
+        <option value="Uttrakhand">Uttrakhand</option>
+        <option value="jammu & kashmir">jammu & kashmir</option>
+        <option value="Gujrat">Gujrat</option>
+        <option  value="Rajstan">Rajsthan</option>
+        <option value="Delhi">Delhi</option>
+        <option value="karnataka">karnataka</option>
+        <option value="Maharastra">Maharastra</option>
+        <option value="Goa">Goa</option>
+        <option value="punjab">punjab</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Madhya pradesh">Madhya pradesh</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Kerla">Kerla</option>
+        <option value="Assam">Assam</option>
+        <option value="Mijoram">Mijoram</option>
+        <option value="Himachal pradesh">Himachal pradesh</option>
+    </select>
+</div>
+</fieldset>
+    <div>
+        <label for="file">Attach a file:</label>
+        <input type="file" name="file" id="fileid">
+    </div>
+    <div>
+        <label for="color">Favourite color:</label>
+        <input type="color" name="color" id="colorid">
+    </div>
+    <div>
+        <label for="datetime">Current timing:</label>
+        <input type="datetime-local" name="datetime" id="datetimeid">
+    </div>
+    <div>
+        <label for="hidden">Cust. ID:</label>
+        <input type="hidden" name="hidden" id="hidden id">
+    </div>
+    <div>
+        <label for="img">Attach photo:</label>
+        <input type="image" src="assam.jpg" width="60px" height="40px" name="img" id="imgid">
+    </div>
+    <div>
+        <label for="month">Bithday month:</label>
+        <input type="month" name="month" id="monthid">
+    </div>
+    <div>
+        <label for="bonus">Bonus:</label>
+        <input type="number" name="bonus" id="bonusid" placeholder="Expected bonus">
+    </div>
+    <div>
+        <label for="range">Feedback:</label>
+        <input type="range" name="range" id="rangeid" min="0" max="10">
+    </div>
+    <div>
+        <label for="search">Search here:</label>
+        <input type="search" name="search" id="searchid">
+        <button>search</button>
+    </div>
+    <div>
+        <label for="time">Entry timing:</label>
+        <input type="time" name="time" id="timeid">
+    </div>
+    <div>
+        <label for="url">Homesite:</label>
+        <input type="url" name="url" id="urlid" placeholder="Enter web address">&nbsp;
+        <input type="submit">
+    </div>
+    <div>
+        <label for="week">Select birthday week:</label>
+        <input type="week" name="week" id="weekid">
+    </div>
+    <div>
+        <!-- this is for search type list -->
+       Favourite cricketers: <input type="text" list="cricketers">
+        <datalist id="cricketers">
+            <option value="rohit sharma">
+            <option value="yuvraj singh">
+            <option value="virendra sehwag">
+            <option value="Saurabh ganguly">
+            <option value="M S Dhoni">
+            <option value="virat kohli">
+        </datalist>
+    </div>
+    <div>
+        <label for="pwd">Enter your password:</label>
+        <input type="password" name="pwd" id="pwdid" placeholder="Enter your mail">
+    </div>
+    <div id="enter"><input type="submit">
+    <input type="reset">
+</div>
+</body>
+</html>
